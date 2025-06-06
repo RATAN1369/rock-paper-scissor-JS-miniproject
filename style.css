@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(25,25,25);
+    color: white;
+    font: bold;
+    font-style: Arial;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center;        
+}
+div{
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 35px;
+}
+.BUTTON{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:rgb(25,25,25) ;
+    border: 6px solid white;
+    /* box-sizing: border-box;  */
+    margin-right: 10px;
+
+}
+.resetBUTTON{
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+     background-color: white;
+     color: rgb(25,25,25);
+     font-size: 20px;
+     transition: opacity,0.2;
+     border-radius: 25px;
+}
+.resetBUTTON:hover{
+   opacity: 0.8;
+}
+.photo{
+ height: 50px;
+ width: 50px;
+}
+.text{
+    font-size: 25px; 
+    margin: 10px,10px,10px,10px;
+}
