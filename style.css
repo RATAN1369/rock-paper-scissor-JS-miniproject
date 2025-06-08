@@ -48,3 +48,16 @@ div{
     font-size: 25px; 
     margin: 10px,10px,10px,10px;
 }
+.AutoPlay{
+     cursor: pointer;
+    height: 50px;
+    width: 250px;
+     background-color: white;
+     color: rgb(25,25,25);
+     font-size: 20px;
+     transition: opacity,0.2;
+     border-radius: 25px;
+}
+.AutoPlay:hover{
+   opacity: 0.8;
+}
