@@ -31,9 +31,26 @@ score = { wins: 0, losses: 0, ties: 0 };
 localStorage.setItem('score', JSON.stringify(score));
 scoreUpdate();
 " class="resetBUTTON"> RESET BUTTON</button>
-
+ <button 
+onclick="
+Autoplay();
+" class="AutoPlay"> Auto Play</button>
 
          <script>
+             let is_auto_play=false;
+             let intervalId;
+             function Autoplay(){
+                    if(!is_auto_play){
+                        intervalId=setInterval(function(){
+                            playGame(gen());
+                        },1000)
+                        is_auto_play=true;
+                    }else{
+                        clearInterval(intervalId);
+                         is_auto_play=false;
+                    }
+                 
+             }
     let score = JSON.parse(localStorage.getItem('score')) || {
         wins: 0,
         losses: 0,
